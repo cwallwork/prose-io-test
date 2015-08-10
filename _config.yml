@@ -12,3 +12,9 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+#Prose settings
+prose:
+  rooturl:"_posts"
+  media: "_assets/images"
+
