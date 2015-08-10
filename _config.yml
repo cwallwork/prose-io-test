@@ -15,6 +15,6 @@ markdown: kramdown
 
 #Prose settings
 prose:
-  rooturl:"_posts"
+  rooturl: "_posts"
   media: "_assets/images"
 
