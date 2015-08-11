@@ -19,4 +19,14 @@ exclude: [vendor]
 prose:
   rooturl: "_posts"
   media: "_assets/images"
+  metadata:
+    _posts:
+      - name: "published"
+      field:
+        element: select
+        options:
+          -name: 'Published'
+          value: 'true'
+          -name: 'Unpublished'
+          value: 'false'
 
