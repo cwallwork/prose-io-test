@@ -9,13 +9,16 @@ install: bundle install
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-deploy:
-  provider: s3
-  access_key_id: AKIAJOKGU5J2NQUQ6J5A
-  secret_access_key:
+  s3_access_key_id: AKIAJOKGU5J2NQUQ6J5A
+  s3_secret_access_key: 
     secure: hgWoQ2WC/pSBvdhaCjtHdqs7pAMjALIqM0x3pk5DciupzVhujfEGwEwpyGxrxHnL99GBLWHsQ2qlqqBPhj2Y25jT0kHe4k6BMOLWcLkpaJwdlizWn/ICZ9aqCjC9d4F6inW72Zo6sm4MQH9Y5NOYhKjcVQ4QeqeoLJdawcEGhCD9NsppZ6Xlw8nqHFReK8g+O4BDzEQ15Pqq2idpiZq9E/hzcagASToqntR7UDqHyXOeatkiJHkJo937jnUcwo8ZxKwj+9jQxArmFxnZ1b2ZuE0pzcOoW7HDc+LT9V88dPVKun26gmfNYniuR7uJm6BQt0NeGTPWbg5UP5qJTeplFiiPsoItEeyFurA+sJiCtCFXy2MlyKetk6QKvycYPWAbRGtt3nRdbD66eDqv9QBaemOkUZMhELYDR1xinpq9vKd7wkPr36MhB1pnNkcOYUZDplm/5J6mWBUtGjNLOgICTXNVVi4CEUf239Olfr+OccgI0g4YQy2TdWWeUBVg2QlgAkqyWVhykx2vUMkir1fpwM79Sctio+Li5Sngk/9ere09bCClJrjX/6KDJ0FpIp2zU2vY2LGMma7HN3pG3yupO7AQBNs4/TI9Yqu0RDolRiQj6RYb/b5sJ3pYPT/TEyxZ3fOxSK8NuIQO4FLdyGzASNbuAD8/Gbykg0glWwstE6I=
-  bucket: jekyll-test-8-10-15
-  acl: public_read
-  local_dir: _site
-  on:
-    repo: cwallwork/prose-io-test
+
+# deploy:
+#   provider: s3
+#   access_key_id: AKIAJOKGU5J2NQUQ6J5A
+#   secret_access_key:
+#     secure: hgWoQ2WC/pSBvdhaCjtHdqs7pAMjALIqM0x3pk5DciupzVhujfEGwEwpyGxrxHnL99GBLWHsQ2qlqqBPhj2Y25jT0kHe4k6BMOLWcLkpaJwdlizWn/ICZ9aqCjC9d4F6inW72Zo6sm4MQH9Y5NOYhKjcVQ4QeqeoLJdawcEGhCD9NsppZ6Xlw8nqHFReK8g+O4BDzEQ15Pqq2idpiZq9E/hzcagASToqntR7UDqHyXOeatkiJHkJo937jnUcwo8ZxKwj+9jQxArmFxnZ1b2ZuE0pzcOoW7HDc+LT9V88dPVKun26gmfNYniuR7uJm6BQt0NeGTPWbg5UP5qJTeplFiiPsoItEeyFurA+sJiCtCFXy2MlyKetk6QKvycYPWAbRGtt3nRdbD66eDqv9QBaemOkUZMhELYDR1xinpq9vKd7wkPr36MhB1pnNkcOYUZDplm/5J6mWBUtGjNLOgICTXNVVi4CEUf239Olfr+OccgI0g4YQy2TdWWeUBVg2QlgAkqyWVhykx2vUMkir1fpwM79Sctio+Li5Sngk/9ere09bCClJrjX/6KDJ0FpIp2zU2vY2LGMma7HN3pG3yupO7AQBNs4/TI9Yqu0RDolRiQj6RYb/b5sJ3pYPT/TEyxZ3fOxSK8NuIQO4FLdyGzASNbuAD8/Gbykg0glWwstE6I=
+#   bucket: jekyll-test-8-10-15
+#   acl: public_read
+#   on:
+#     repo: cwallwork/prose-io-test
