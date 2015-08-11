@@ -27,9 +27,10 @@ prose:
           label: "tag"
 
       - name: "published"
-      field:
-        element: select
-        options:
-          - 'true'
-          - 'false'
+        field:
+          element: select
+          label: 'published'
+          options:
+            - value: 'true'
+            - value: 'false'
 
