@@ -26,12 +26,12 @@ prose:
           element: "text"
           label: "tag"
 
-      # - name: "published"
-      # field:
-      #   element: select
-      #   options:
-      #     - name: 'Published'
-      #     value: 'true'
-      #     - name: 'Unpublished'
-      #     value: 'false'
+      - name: "published"
+      field:
+        element: select
+        options:
+          - name: 'Published'
+          value: 'true'
+          - name: 'Unpublished'
+          value: 'false'
 
