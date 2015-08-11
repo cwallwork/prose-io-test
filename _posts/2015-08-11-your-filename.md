@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ## Travis CI test post
