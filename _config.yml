@@ -34,7 +34,7 @@ prose:
             - value: 'true'
             - value: 'false'
 
-      -name: "title"
+      - name: "title"
         field:
           element: "text"
           label: "title"
