@@ -25,8 +25,8 @@ prose:
       field:
         element: select
         options:
-          -name: 'Published'
+          - name: 'Published'
           value: 'true'
-          -name: 'Unpublished'
+          - name: 'Unpublished'
           value: 'false'
 
