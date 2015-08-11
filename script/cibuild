@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -3 #halt script on error
+
+bundle exec jekyll build
+
+# bundle exec htmlproof ./_site 
+
+
+
