@@ -3,9 +3,9 @@ set -3 #halt script on error
 
 bundle exec jekyll build
 
-if [[ $TRAVIS_BRANCH == 'master']] ; then
+if [[ $TRAVIS_BRANCH == 'master']]; then
   s3_website push --config_dir staging
-elif [[ $TRAVIS_BRANCH == 'live']] ; then
+elif [[ $TRAVIS_BRANCH == 'live']]; then
   s3_website push --cofig_dir production
 else
   echo 'Invalid branch. you can only publish from master or live.'
