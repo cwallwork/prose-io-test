@@ -18,7 +18,7 @@ exclude: [vendor]
 #Prose settings
 prose:
   rooturl: "_posts"
-  media: "_assets/images"
+  media: "images"
   metadata:
     _posts:
       - name: "tag"
